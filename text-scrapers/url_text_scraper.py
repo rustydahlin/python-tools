@@ -27,7 +27,8 @@ import time
 ##text_url = sys.argv[1]
 
 # Static Text Path
-text_url = "http://bismarck-larks.northwoodsleague.tv/Home/SelectPromoSeats?UserPromoCode=CURL"  
+# Example: text_url = "http://bismarck-larks.northwoodsleague.tv/Home/SelectPromoSeats?UserPromoCode=CURL"  
+text_url = "http://www.WEBSITE.com"  
 
 # GET request for text scraping
 res = requests.get(text_url)
@@ -36,12 +37,14 @@ res = requests.get(text_url)
 info = bs4.BeautifulSoup(res.text, 'html.parser')
 
 # Set variable infoText to store what you are scraping
-# .promoCodeRow in this example points to the name of several rows in a table on a website
-infoText = info.select('.promoCodeRow')
+# Example: infoText = info.select('.promoCodeRow')
+# - .promoCodeRow in this example points to the name of several rows in a table on a website
+infoText = info.select('.texttoscrape')
 
 # Display output from webpage
-# str(len(infoText)) adds up how many instances of 'promoCodeRow' it finds, and displays as an integer
-print('There are currently ' + str(len(infoText)) + ' tickets remaining.')
+# Example: print('There are currently ' + str(len(infoText)) + ' tickets remaining.')
+# - str(len(infoText)) adds up how many instances of 'promoCodeRow' it finds, and displays as an integer
+print(str(len(infoText)))
 
 # Timeout on CL window to display result before closing
 time.sleep(10)
