@@ -27,10 +27,10 @@ input("If URL looks correct, press ENTER to continue. If not, press CTRL+C")
 
 # Command Line Argument for URL
 # Usage: $ python url_single_image_scraper.py [URL]
-#image_url = sys.argv[1]
+##image_url = sys.argv[1]
 
 # Static Image Path
-#image_url = "https://www.WEBSITE.com/IMAGE.PNG"  
+##image_url = "https://www.WEBSITE.com/IMAGE.PNG"  
  
 # send a HTTP request to the server and save
 # the HTTP response in a response object called r

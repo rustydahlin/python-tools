@@ -13,11 +13,24 @@
 #-------------------------------------------------------------------------------
 
 # imported libraries
-import requests, bs4
+import requests
+import bs4
 import time
 
-# URL for text scraping
-res = requests.get('http://bismarck-larks.northwoodsleague.tv/Home/SelectPromoSeats?UserPromoCode=CURL')
+# User Input for URL
+##text_url = input("Please Enter URL: ")
+##print(text_url)
+##input("If URL looks correct, press ENTER to continue. If not, press CTRL+C")
+
+# Command Line Argument for URL
+# Usage: $ python url_text_scraper.py [URL]
+##text_url = sys.argv[1]
+
+# Static Text Path
+text_url = "http://bismarck-larks.northwoodsleague.tv/Home/SelectPromoSeats?UserPromoCode=CURL"  
+
+# GET request for text scraping
+res = requests.get(text_url)
 
 # Set variable for info
 info = bs4.BeautifulSoup(res.text, 'html.parser')
