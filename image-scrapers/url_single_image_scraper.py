@@ -26,6 +26,7 @@ print(image_url)
 input("If URL looks correct, press ENTER to continue. If not, press CTRL+C")
 
 # Command Line Argument for URL
+# Usage: $ python url_single_image_scraper.py [URL]
 #image_url = sys.argv[1]
 
 # Static Image Path
