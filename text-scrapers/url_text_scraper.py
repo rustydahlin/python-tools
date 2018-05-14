@@ -43,7 +43,7 @@ infoText = info.select('.texttoscrape')
 
 # Display output from webpage
 # Example: print('There are currently ' + str(len(infoText)) + ' tickets remaining.')
-# - str(len(infoText)) adds up how many instances of 'promoCodeRow' it finds, and displays as an integer
+# - str(len(infoText)) adds up how many instances of '.promoCodeRow' it finds, and displays as an integer
 print(str(len(infoText)))
 
 # Timeout on CL window to display result before closing
