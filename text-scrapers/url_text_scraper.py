@@ -38,7 +38,7 @@ info = bs4.BeautifulSoup(res.text, 'html.parser')
 
 # Set variable infoText to store what you are scraping
 # Example: infoText = info.select('.promoCodeRow')
-# - .promoCodeRow in this example points to the name of several rows in a table on a website
+# - .promoCodeRow in this example points to the name of several rows in a table on a website - Derived from the CSS
 infoText = info.select('.texttoscrape')
 
 # Display output from webpage
