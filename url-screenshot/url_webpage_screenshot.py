@@ -16,9 +16,9 @@
 # Import from Static Website Path
 from selenium import webdriver
 driver = webdriver.PhantomJS()
-driver.set_window_size(1024, 768) # set the window size that you need 
-driver.get('https://github.com') # URL of webpage to be screenshot
-driver.save_screenshot('github.png') # path of where to save the screenshot with image name
+driver.set_window_size(2048, 1536) # set the window size that you need 
+driver.get('http://www.dahlinit.com/home/') # URL of webpage to be screenshot
+driver.save_screenshot('website.png') # path of where to save the screenshot with image name
 
 # Using Chrome Webdriver
 ##DRIVER = 'chromedriver'
