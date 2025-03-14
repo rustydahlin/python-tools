@@ -20,7 +20,7 @@ import sys
 # time variable
 timestr = time.strftime("%Y%m%d")
 
-# User Input for URL
+# User Input for URLs
 image_url = input("Please Enter URL: ")
 print(image_url)
 input("If URL looks correct, press ENTER to continue. If not, press CTRL+C")
